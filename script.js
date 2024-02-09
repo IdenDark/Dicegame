@@ -93,6 +93,8 @@ btnHold.addEventListener(`click`, function () {
         .querySelector(`.player--${activePlayer}`)
         .classList.remove(`player--active`);
       diceEl.classList.add(`hidden`);
+      // Display a win message
+      document.querySelector(`.player--${activePlayer}`).querySelector('h2').textContent +=' WON'
     } else {
       switchPrayer();
     }
